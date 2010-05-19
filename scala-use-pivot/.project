@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>scala-use-pivot</name>
+	<comment></comment>
+	<projects>
+		<project>charts</project>
+		<project>core</project>
+		<project>web</project>
+		<project>web-server</project>
+		<project>wtk</project>
+		<project>wtk-terra</project>
+	</projects>
+	<buildSpec>
+		<buildCommand>
+			<name>ch.epfl.lamp.sdt.core.scalabuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+	</buildSpec>
+	<natures>
+		<nature>ch.epfl.lamp.sdt.core.scalanature</nature>
+		<nature>org.eclipse.jdt.core.javanature</nature>
+	</natures>
+</projectDescription>

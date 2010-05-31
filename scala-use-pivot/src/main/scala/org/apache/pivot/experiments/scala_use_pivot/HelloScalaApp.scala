@@ -22,11 +22,11 @@ import org.apache.pivot.wtk.DesktopApplicationContext;
 /**
  * HelloScala App(lication) entry point, for running HelloScala with Pivot
  */
-object HelloScalaApp 
-    // extends Application 
+object HelloScalaApp
+    // extends Application
 {
 
-    def main(args: Array[String]) = 
+    def main(args: Array[String]) =
     {
         AppUtils.log("Scala Application Started" + " (main class " + AppUtils.className(HelloScalaApp) + ")")
         DesktopApplicationContext.main(classOf[HelloScala], args)

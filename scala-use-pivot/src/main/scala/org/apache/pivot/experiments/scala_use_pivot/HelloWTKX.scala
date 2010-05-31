@@ -10,11 +10,11 @@ import org.apache.pivot.wtkx.WTKXSerializer;
 /**
  * Pivot entry point
  */
-class HelloWTKX extends org.apache.pivot.wtk.Application 
+class HelloWTKX extends org.apache.pivot.wtk.Application
 {
     private var window: Window = null
 
-    override def startup(display:Display, properties:Map[String, String]) = 
+    override def startup(display:Display, properties:Map[String, String]) =
     {
         AppUtils.log("Pivot startup")
 
@@ -25,23 +25,23 @@ class HelloWTKX extends org.apache.pivot.wtk.Application
         // window = (Window) wtkxSerializer.readObject(this, "hello.wtkx");           // Java  version
         window = wtkxSerializer.readObject(this, "hello.wtkx").asInstanceOf[Window];  // Scala version
 
-        if (window != null) 
+        if (window != null)
             window.open(display);
-        
+
     }
 
-    override def shutdown(optional:Boolean):Boolean = 
+    override def shutdown(optional:Boolean):Boolean =
     {
         AppUtils.log("Pivot shutdown")
 
-        if (window != null) 
+        if (window != null)
           window.close
-        
+
         return false;
     }
 
     override def suspend():Unit = {}
 
     override def resume():Unit = {}
-    
+
 }

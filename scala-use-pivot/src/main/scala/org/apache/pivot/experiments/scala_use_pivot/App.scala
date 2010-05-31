@@ -22,11 +22,11 @@ import org.apache.pivot.wtk.DesktopApplicationContext;
 /**
  * Generic App(lication) entry point
  */
-object App 
-    // extends Application 
+object App
+    // extends Application
 {
 
-    def main(args: Array[String]) = 
+    def main(args: Array[String]) =
     {
         AppUtils.log("Scala Application Started" + " (main class " + AppUtils.className(App) + ")")
 

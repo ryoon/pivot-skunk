@@ -29,17 +29,17 @@ object AppUtils
     // val className = App.getClass().getName().split(".$")(0)  // trick: remove the $ at the end of the name ...
     val df  = getDateTimeInstance
 
-    def className(clazz: AnyRef): String = 
+    def className(clazz: AnyRef): String =
     {
       val className : String = clazz.getClass().getName().split(".$")(0)  // trick: remove the $ at the end of the name ...
       return className
     }
-    
-    def log(msg: String) 
+
+    def log(msg: String)
     {
         val now = new Date
-        
+
         println(df.format(now) + " - " + msg)
     }
-    
+
 }

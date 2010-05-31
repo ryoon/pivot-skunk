@@ -32,11 +32,11 @@ import org.apache.pivot.wtk.Application;
 /**
  * Pivot entry point
  */
-class HelloScala extends org.apache.pivot.wtk.Application 
+class HelloScala extends org.apache.pivot.wtk.Application
 {
     private var window:Window = null
 
-    override def startup(display:Display, properties:Map[String, String]) = 
+    override def startup(display:Display, properties:Map[String, String]) =
     {
         AppUtils.log("Pivot startup")
 
@@ -54,18 +54,18 @@ class HelloScala extends org.apache.pivot.wtk.Application
         window.open(display)
     }
 
-    override def shutdown(optional:Boolean):Boolean = 
+    override def shutdown(optional:Boolean):Boolean =
     {
         AppUtils.log("Pivot shutdown")
 
-        if (window != null) 
+        if (window != null)
           window.close
-        
+
         return false;
     }
 
     override def suspend():Unit = {}
 
     override def resume():Unit = {}
-    
+
 }
